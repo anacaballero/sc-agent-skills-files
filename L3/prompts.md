@@ -4,11 +4,11 @@
 
 - List the tables in BigQuery that exist
 - Show me the schema of the table
-- To update the skill:
+- I want to update the `analyzing-marketing-campaign-csv` skill so that instead of expecting a CSV upload, it pulls data directly from BigQuery.
 
-    I want to update the `analyzing-marketing-campaign-csv` skill so that instead of expecting a CSV upload, it pulls data directly from BigQuery.
-    It should include the information about the BigQuery table:
-    -**Dataset:** `marketing` 
+  It should include the information about the BigQuery table:
+
+    - **Dataset:** `marketing` 
     - **Table:** `campaign_performance`
     - **Schema** SEE ABOVE
 
@@ -18,7 +18,9 @@
     3. Keep all the same analysis logic (funnel metrics, efficiency metrics, budget reallocation rules)
     4. Keep the existing `references/budget_reallocation_rules.md` file
 
-    The skill should instruct Claude on how to query the data, not hardcode the SQL. Make sure to follow best practices for skill creation.
+   The skill should instruct Claude on how to query the data, not hardcode the SQL. Make sure to follow best practices for skill creation.
+
+- Package this as a .skill file.
 
 ## Part 2:  Creating the Brand Guideline Skill
 
